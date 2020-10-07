@@ -1,0 +1,160 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.3 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                     AC Analysis of Preamp bc238 ec L                     ***
+***                           04/10/2020 18:17:16                            ***
+********************************************************************************
+Limits
+======
+Frequency Range          Log 20E6,1Meg
+Number of Points         1001
+Temperature              Linear 27
+Maximum Change %         5
+Noise Input              NONE
+Noise Output             2
+Run Options              Normal
+State Variables          Zero
+Operating Point          On
+Auto Scale Ranges        On
+Accumulate Plots         Off
+Ignore Expression Errors Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            96.741m  2           768.442m  3             5.000  
+4             0.000   5             1.877   6            96.741m 
+7           768.442m  8             0.000   9             1.877  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:         BC238C         BC238C
+
+Beta Terms:
+BETADC             425.189        425.189 
+BETAAC             449.745        449.745 
+
+Capacitance Terms:
+CPI                 33.239p        33.239p
+CMU                  3.551p         3.551p
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  41.694m        41.694m
+
+Current Terms:
+IB                   3.338u         3.338u
+IC                   1.419m         1.419m
+
+Resistance Terms:
+RPI                 10.787K        10.787K
+RX                   0.000          0.000 
+RO                  71.237K        71.237K
+
+Voltage Terms:
+VBE                671.701m       671.701m
+VBC                 -1.109         -1.109 
+VCE                  1.781          1.781 
+
+Frequency Terms:
+FT               180.373MEG     180.373MEG
+
+Power DC Terms:
+PD                   2.530m         2.530m
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   3.338u         3.338u
+Ic                   1.419m         1.419m
+Ie                  -1.423m        -1.423m
+Is                   0.000          0.000 
+
+Condition:
+State                   LIN            LIN
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1             R3             R4             R6
+V                    96.741m       768.442m         4.232         96.741m
+Power DC Terms:
+PD                  137.630u       268.410u         1.492m       137.630u
+
+DC Pin Currents:
+Ir                    1.423m       349.292u       352.630u         1.423m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R7             R8             R9            R10
+V                   768.442m         4.232          0.000          3.123 
+Power DC Terms:
+PD                  268.410u         1.492m         0.000          4.432m
+
+DC Pin Currents:
+Ir                  349.292u       352.630u         0.000          1.419m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                R11
+V                     3.123 
+Power DC Terms:
+PD                    4.432m
+
+DC Pin Currents:
+Ir                    1.419m
+
+Device Variables:
+tc1                   0.000 
+tc2                   0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C1             C3             C4
+V                   768.442m        -1.109         -1.877 
+Power DC Terms:
+PS                    0.000          0.000          0.000 
+
+DC Pin Currents:
+Ic                    0.000          0.000          0.000 
+
+Device Variables:
+ic                    0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1             V2
+V                    5.000          0.000 
+Power DC Terms:
+PG                  17.720m         0.000 
+
+DC Pin Currents:
+ISource             -3.544m         0.000 
+
+

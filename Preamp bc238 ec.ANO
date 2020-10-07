@@ -1,0 +1,168 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.3 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                      AC Analysis of Preamp bc238 ec                      ***
+***                           07/10/2020 22:01:42                            ***
+********************************************************************************
+Limits
+======
+Frequency Range          Log 20E6,1Meg
+Number of Points         1001
+Temperature              Linear 27
+Maximum Change %         5
+Noise Input              NONE
+Noise Output             2
+Run Options              Normal
+State Variables          Zero
+Operating Point          On
+Auto Scale Ranges        On
+Accumulate Plots         Off
+Ignore Expression Errors Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1           305.236m  2             1.083   3             5.000  
+4             0.000   5             0.000   6             5.000  
+X1.1          5.000   X1.2          1.083   X1.3        305.236m 
+X1.8          1.083   X1.7        305.236m 
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current  Inductor     Current  Inductor     Current 
+L4           -9.138m  X1.L1       111.670u  X1.L2         9.138m 
+X1.L3        -9.250m  X1.LE         9.250m  X1.LB       111.670u 
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:            X1.Q1
+Using model:     X1.BFR91A
+
+Beta Terms:
+BETADC             81.829 
+BETAAC             82.099 
+
+Capacitance Terms:
+CPI                 7.887p
+CMU                74.017f
+CBX               542.820f
+CJS                 0.000 
+
+Conductance Terms:
+GM                349.217m
+
+Current Terms:
+IB                111.670u
+IC                  9.138m
+
+Resistance Terms:
+RPI               235.093 
+RX                 10.000 
+RO                  4.768K
+
+Voltage Terms:
+VBE               777.461m
+VBC                -3.917 
+VCE                 4.695 
+
+Frequency Terms:
+FT                  6.536G
+
+Power DC Terms:
+PD                 42.987m
+PS                  0.000 
+
+DC Pin Currents:
+Ib                111.670u
+Ic                  9.138m
+Ie                 -9.250m
+Is                  0.000 
+
+Condition:
+State                  LIN
+
+Device Variables:
+area                1.000 
+vbe                 0.000 
+vce                 0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R3            R4            R5
+V                  305.236m        1.083         3.917         0.000 
+Power DC Terms:
+PD                   2.823m      781.489u        3.265m        0.000 
+
+DC Pin Currents:
+Ir                   9.250m      721.798u      833.469u        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Inductor
+============================================
+Instance:                L4         X1.L1         X1.L2         X1.L3         X1.LE
+V                    0.000         0.000         0.000         0.056f        0.000 
+Power DC Terms:
+PS                   0.000         0.000         0.000        -0.001f        0.000 
+
+DC Pin Currents:
+Il                  -9.138m      111.670u        9.138m       -9.250m        9.250m
+
+Device Variables:
+ic                   0.000         0.000         0.000         0.000         0.000 
+
+
+Instance:             X1.LB
+V                    0.000 
+Power DC Terms:
+PS                   0.000 
+
+DC Pin Currents:
+Il                 111.670u
+
+Device Variables:
+ic                   0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1            C2        X1.CBE        X1.CCE        X1.CCB
+V                    1.083        -5.000       777.461m        4.695        -3.917 
+Power DC Terms:
+PS                   0.000         0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000         0.000         0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V2
+V                   5.000         0.000 
+Power DC Terms:
+PG                 49.857m        0.000 
+
+DC Pin Currents:
+ISource            -9.971m        0.000 
+
+
