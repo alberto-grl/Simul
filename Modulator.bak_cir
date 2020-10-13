@@ -288,7 +288,7 @@ PowerFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=2,3, -1,-1, -9,-37, 180,186,2371,999
+Window Placement in Transient Analysis=2,3, -1,-1, -9,-37, 150,155,2145,968
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -821,7 +821,7 @@ ALIGNBOTTOM=Yes
 
 [Section]
 Index=0
-Name="Modulator"
+Name="circuit2"
 Type=Main
 Enable=True
 CurrentPage 0=0
@@ -844,7 +844,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=1
-Px=416,481
+Px=1327,870
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -987,7 +987,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=2,3, -1,-1, -9,-37, 180,186,2371,999
+Window Placement=2,3, -1,-1, -9,-37, 150,155,2145,968
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1207,10 +1207,6 @@ ALIGNTOP=Yes
 ALIGNMIDDLES=Yes
 ALIGNBOTTOM=Yes
 
-[APage]
-Analysis=Transient
-Name="MAIN"
-
 [Monte Carlo Options]
 Analysis=Transient
 Status=Off
@@ -1222,9 +1218,9 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TMax=100u
+TMax=1u
 TStart=0
-TStep=0.01u
+TStep=0
 NPts=51
 Temp=27
 RetraceRuns=1
@@ -1239,12 +1235,10 @@ Analysis=Transient
 Plt=1
 AliasID=1
 XExp=T
-YExp=V(VOUT)
-XRng=0.0001
-YRng=8,-2
+YExp=v(1)
+XRng=Auto
+YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=2e-5
-Range Grid Y=2
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1265,12 +1259,10 @@ Analysis=Transient
 Plt=1
 AliasID=2
 XExp=T
-YExp=V(VIN)
-XRng=0.0001
-YRng=8,-2
+YExp=v(2)
+XRng=Auto
+YRng=Auto
 Options=LINEARX,LINEARY
-Range Grid X=2e-5
-Range Grid Y=2
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -1317,7 +1309,6 @@ PlaceText=True
 
 [Pane]
 Analysis=Transient
-CurrentPage 0="MAIN"
 
 [Pane]
 Analysis=AC
