@@ -1,0 +1,253 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.3 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                     Transient Analysis of Modulator                      ***
+***                           13/10/2020 17:37:53                            ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           100u
+Output Start Time (tstart) 0
+Maximum Time Step          0.01u
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VC          686.171n  2            12.999   3            13.000  
+4            12.993   VOUT        686.171n  VIN           0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1          -68.617n 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                D1
+Using model:         1N4007
+
+Capacitance Terms:
+CAP                  8.405p
+
+Current Terms:
+ID                 -68.475n
+
+Resistance Terms:
+REQ              200.100MEG
+
+Voltage Terms:
+VD                 -13.000 
+
+Power DC Terms:
+PD                 890.169n
+PS                   0.000 
+
+DC Pin Currents:
+Id                 -68.475n
+
+Condition:
+State                   OFF
+
+Device Variables:
+area                 1.000 
+ic                   0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q1
+Using model:         BD240B
+
+Beta Terms:
+BETADC              -1.115 
+BETAAC              22.304m
+
+Capacitance Terms:
+CPI                  2.002p
+CMU                  1.168p
+CBX                  0.000 
+CJS                  0.000 
+
+Conductance Terms:
+GM                 330.090f
+
+Current Terms:
+IB                -127.869p
+IC                 142.590p
+
+Resistance Terms:
+RPI                 67.570G
+RX                   0.000 
+RO                 793.593G
+
+Voltage Terms:
+VBE                 -1.299m
+VBC                 12.999 
+VCE                -13.000 
+
+Frequency Terms:
+FT                  16.575m
+
+Power DC Terms:
+PD                   1.853n
+PS                   0.000 
+
+DC Pin Currents:
+Ib                 127.869p
+Ic                -142.590p
+Ie                  14.721p
+Is                   0.000 
+
+Condition:
+State                   OFF
+
+Device Variables:
+area                 1.000 
+vbe                  0.000 
+vce                  0.000 
+
+
+
+Operating Point for Devices of Type Mosfet NMOS
+===============================================
+Instance:                M1
+Using model:          BS170
+
+Capacitance Terms:
+CBD                 10.619p
+CBS                  0.000 
+CGSOVL              13.366p
+CGDOVL              13.366p
+CGBOVL               0.000 
+CGS                  0.000 
+CGD                  0.000 
+CGB                  0.000 
+
+Conductance Terms:
+GM                   0.000 
+GDS                  0.000 
+GMBS                 0.000 
+
+Current Terms:
+ID                  12.993u
+
+Voltage Terms:
+VGS                  0.000 
+VDS                 12.993 
+VBS                  0.000 
+VGB                  0.000 
+VGD                -12.993 
+VDB                 12.993 
+VTH                  1.596 
+VDSAT                0.000 
+
+Power DC Terms:
+PD                 168.808u
+PS                   0.000 
+
+DC Pin Currents:
+Ig                   0.000 
+Id                  12.993u
+Is                 -12.993u
+Ib                 -13.003p
+
+Condition:
+State                   OFF
+
+Device Variables:
+m                    1.000 
+l                    0.000 
+w                    0.000 
+ad                   0.000 
+as                   0.000 
+pd                   0.000 
+ps                   0.000 
+nrd                  0.000 
+nrs                  0.000 
+nrb                  0.000 
+nrg                  0.000 
+vds                  0.000 
+vgs                  0.000 
+vbs                  0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1             R2             R3
+V                     1.299m         6.107m       686.171n
+Power DC Terms:
+PD                   16.881n        79.340n        47.083f
+
+DC Pin Currents:
+Ir                   12.993u        12.993u        68.617n
+
+Device Variables:
+tc1                   0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type Inductor
+============================================
+Instance:                 L1
+V                 1.059E-022
+Power DC Terms:
+PS               -7.265E-030
+
+DC Pin Currents:
+Il                  -68.617n
+
+Device Variables:
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C1
+V                   686.171n
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Ic                    0.000 
+
+Device Variables:
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1             V2
+V                    0.000         13.000 
+Power DC Terms:
+PG                   0.000        169.796u
+
+DC Pin Currents:
+ISource              0.000        -13.061u
+
+
